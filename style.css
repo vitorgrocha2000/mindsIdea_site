@@ -204,3 +204,10 @@ main #impact-main {
     margin: 50px 0 40px 0;
 
 }
+
+footer {
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+    text-align: center;
+}
