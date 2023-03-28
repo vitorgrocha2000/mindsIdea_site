@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
 /* Largura máxima para a classe .container e centraliza horizontalmente */
 .container {
     max-width: 1280px;
@@ -20,14 +25,14 @@ body {
 /* Propriedades do cabeçalho */
 header {
     font-family: 'Archivo', sans-serif;
-    padding: 0.7rem 0;
+    padding: 1.1rem 0;
     background-color: #182c61;
 }
 
 /* Tamanho e a margem do logo */
 #logo img {
-    height: 3rem;
-    margin-right: 0.625rem;
+    height: 4.8rem;
+    margin-right: 1rem;
 }
 
 /* Transição de escala quando o usuário passa o mouse sobre o logo */
@@ -59,8 +64,8 @@ main #impact-main {
 /* Estilo de cada item de navegação no cabeçalho */
 header nav li {
     display: inline;
-    margin-left: 1rem;
-    font-size: 0.9375rem;
+    margin-left: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 800;
 }
 
@@ -74,15 +79,15 @@ header nav li a:hover {
     font-family: 'Red Hat Display', sans-serif;
     text-transform: uppercase;
     font-weight: 1000;
-    margin-left: 1.875rem;
-    width: 12.625rem;
-    height: 2.25rem;
-    line-height: 1.625rem;
+    margin-left: 3rem;
+    width: 20.5rem;
+    height: 3.65rem;
+    line-height: 2.64rem;
     color: #27c470;
-    font-size: 0.875rem;
+    font-size: 1.42rem;
     display: flex;
-    border: 0.15em solid #27c470;
-    border-radius: 2em;
+    border: 0.2rem solid #27c470;
+    border-radius: 2rem;
     justify-content: center;
     align-items: center;
     transition: background-color 0.15s ease-in-out;
@@ -108,19 +113,17 @@ main #impact-main {
 /* Estilo do texto na seção de impacto */
 .impact-main-text {
     font-family: 'Red Hat Display', sans-serif;
-    width: 90%;
-    max-width: 600px;
+    width: 90vw;
+    max-width: 60rem;
     padding: 2rem;
-    text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.2);
+    text-shadow: 0.2rem 0.2rem 0.05rem rgba(0, 0, 0, 0.2);
     color: black;
-    margin-left: 2.5rem;
-    font-size: 3rem;
-    line-height: 1.5;
+    margin-left: 4rem;
 }
 
 /* Estilo do texto na seção de impacto, foi necessário adicioanr para modificar o negrito */
 #impact-main-text-phase {
-    font-size: 2.7rem;
+    font-size: 4.5rem;
     font-weight: 400;
     /* font-family: 'Roboto', sans-serif; */
 }
@@ -128,8 +131,8 @@ main #impact-main {
 /* Estilo do texto na seção de impacto para destacar o "Dedicated Team */
 .impact-main-text-phase-team {
     font-weight: bolder;
-    color:#27c470;
-    text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.5);
+    color: #27c470;
+    text-shadow: 0.2rem 0.2rem 0.05rem rgba(0, 0, 0, 0.5);
 }
 
 /* Estilo do texto na seção de impacto para destacar o "desired Software */
@@ -139,12 +142,15 @@ main #impact-main {
 }
 
 /* Estilo para os our services */
+#services {
+    height: 100vh;
+}
+
 .services-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0 12rem;
 }
 
 .icon-services a img {
@@ -154,56 +160,61 @@ main #impact-main {
 
 .services {
     width: 32%;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
+    padding: 1.625rem;
+    margin-bottom: 2.4rem;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
 }
 
 .services:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.6);
 }
 
 .section-title {
     text-align: center;
-    padding: 1rem 0;
-    margin: 1rem;
+    padding: 1.625rem 0;
+    margin: 1.625rem;
     color: #182c61;
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 3.2rem;
 }
 
 .title-services {
-    font-size: 1.2rem;
-    padding: 1rem 0;
+    font-size: 1.8rem;
+    padding: 1.625rem 0;
 }
 
 .explaine-services {
     /* margin-top: 1.2rem; */
-    font-size: 1rem;
+    font-size: 1.4rem;
     width: auto;
 }
 
 /* button */
 /* button */
 
-.main-contact-button {
+#main-contact-button {
     background-color: #27c470;
     border: none;
-    transition: transform 0.2s ease-in-out
+    transition: transform 0.3s ease-in-out;
+    margin: 0rem 0 4rem 0;
+    align-items: center;
+    font-size: 2rem;
+    width: 23vw;
+    height: 4rem;
+    color: #fff;
 }
 
-.main-contact-button:hover {
+#main-contact-button:hover {
     transform: translateY(-5px);
 }
 
 #we-can-help-you {
-    color: #fff;
-    margin: 50px 0 40px 0;
-
+    justify-content: space-between;
+    margin-left: 38.35%;
 }
 
 footer {
