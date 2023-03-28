@@ -109,18 +109,18 @@ main #impact-main {
 .impact-main-text {
     font-family: 'Red Hat Display', sans-serif;
     width: 90%;
-    max-width: 420px;
+    max-width: 600px;
     padding: 2rem;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.2);
     color: black;
-    margin-left: 1rem;
-    font-size: 1.5rem;
+    margin-left: 2.5rem;
+    font-size: 3rem;
     line-height: 1.5;
 }
 
 /* Estilo do texto na seção de impacto, foi necessário adicioanr para modificar o negrito */
 #impact-main-text-phase {
-    font-size: 2.2rem;
+    font-size: 2.7rem;
     font-weight: 400;
     /* font-family: 'Roboto', sans-serif; */
 }
@@ -128,7 +128,8 @@ main #impact-main {
 /* Estilo do texto na seção de impacto para destacar o "Dedicated Team */
 .impact-main-text-phase-team {
     font-weight: bolder;
-    color: #26b368;
+    color:#27c470;
+    text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.5);
 }
 
 /* Estilo do texto na seção de impacto para destacar o "desired Software */
@@ -147,7 +148,7 @@ main #impact-main {
 }
 
 .icon-services a img {
-    height: 20vh;
+    height: 16vh;
     /* margin-bottom: 0.8rem; */
 }
 
