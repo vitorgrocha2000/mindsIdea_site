@@ -1,3 +1,11 @@
+/* 
+Fontes:
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+*/
+
+
 /* Estilo padrão para todos os elementos */
 * {
     box-sizing: border-box;
@@ -13,7 +21,7 @@ html {
 /* Largura máxima para a classe .container e centraliza horizontalmente */
 .container {
     max-width: 1280px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -47,18 +55,15 @@ header nav li a,
     text-decoration: none;
 }
 
-/* Exibição flexível do cabeçalho e da seção de impacto*/
+/* Exibição flexível e centralizadas do cabeçalho, menu navegação e da seção de impacto*/
 header #header-container,
-main #impact-main {
+main #impact-main,
+.nav-container,
+.text-image-about-us,
+#we-can-help-you {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-/* Exibição flexível do contêiner do menu de navegação e centraliza*/
-.nav-container {
-    display: flex;
-    align-items: center;
 }
 
 /* Estilo de cada item de navegação no cabeçalho */
@@ -112,32 +117,31 @@ main #impact-main {
 
 /* Estilo do texto na seção de impacto */
 .impact-main-text {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     width: 90vw;
-    max-width: 60rem;
-    padding: 2rem;
-    text-shadow: 0.2rem 0.2rem 0.05rem rgba(0, 0, 0, 0.2);
+    max-width: 50rem;
+    text-shadow: 0.15rem 0.15rem 0.05rem rgba(0, 0, 0, 0.2);
     color: black;
-    margin-left: 4rem;
+    margin-left: 9rem;
 }
 
 /* Estilo do texto na seção de impacto, foi necessário adicioanr para modificar o negrito */
 #impact-main-text-phase {
-    font-size: 4.5rem;
-    font-weight: 400;
+    font-size: 4.7rem;
+    font-weight: 500;
     /* font-family: 'Roboto', sans-serif; */
 }
 
 /* Estilo do texto na seção de impacto para destacar o "Dedicated Team */
 .impact-main-text-phase-team {
-    font-weight: bolder;
+    font-weight: 550;
     color: #27c470;
-    text-shadow: 0.2rem 0.2rem 0.05rem rgba(0, 0, 0, 0.5);
+    text-shadow: 0.1rem 0.02rem 0.05rem rgba(0, 0, 0, 0.3);
 }
 
 /* Estilo do texto na seção de impacto para destacar o "desired Software */
 .impact-main-text-phase-desired {
-    font-weight: bolder;
+    font-weight: 550;
     color: #2697b3;
 }
 
@@ -150,15 +154,16 @@ main #impact-main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 12rem;
+    padding: 0 12rem 3.2rem;
 }
 
 .icon-services a img {
-    height: 16vh;
+    height: 15vh;
     /* margin-bottom: 0.8rem; */
 }
 
 .services {
+    user-select: none;
     width: 32%;
     padding: 1.625rem;
     margin-bottom: 2.4rem;
@@ -175,8 +180,7 @@ main #impact-main {
 
 .section-title {
     text-align: center;
-    padding: 1.625rem 0;
-    margin: 1.625rem;
+    padding: 3.2rem 0;
     color: #182c61;
     font-weight: 800;
     font-size: 3.2rem;
@@ -193,17 +197,15 @@ main #impact-main {
     width: auto;
 }
 
-/* button */
-/* button */
 
+/* button contact "we can help you" */
 #main-contact-button {
-    background-color: #27c470;
+    background-color: #2759c4;
     border: none;
     transition: transform 0.3s ease-in-out;
-    margin: 0rem 0 4rem 0;
-    align-items: center;
+    margin: 1.2rem 0 3.2rem;
     font-size: 2rem;
-    width: 23vw;
+    width: 20vw;
     height: 4rem;
     color: #fff;
 }
@@ -212,9 +214,27 @@ main #impact-main {
     transform: translateY(-5px);
 }
 
-#we-can-help-you {
-    justify-content: space-between;
-    margin-left: 38.35%;
+.button-services {
+    margin: auto;
+}
+
+#about-us {
+    background-color: #f0f5f7;
+    height: 100vh;
+}
+
+#about-us p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 2.1rem;
+    margin-bottom: 2rem;
+    color: #2697b3;
+    font-weight: 600;
+    padding: 0 5rem;
+}
+
+.image-about-us img {
+    padding: 0 3.2rem;
+    width: 47vw;
 }
 
 footer {
