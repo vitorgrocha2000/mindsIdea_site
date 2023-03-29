@@ -26,7 +26,9 @@ html {
 }
 
 /* Fonte do documento usando o atributo Body*/
-body {
+body,
+input,
+textarea {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -50,24 +52,27 @@ header {
 
 /* Cor do texto do cabeçalho e do botão de contato */
 header nav li a,
-.contact-button a {
+.contact-button a,
+.navigation a {
     color: #ecf0f1;
     text-decoration: none;
 }
 
 /* Exibição flexível e centralizadas do cabeçalho, menu navegação e da seção de impacto*/
-header #header-container,
-main #impact-main,
+#header-container,
+#impact-main,
 .nav-container,
 .text-image-about-us,
-#we-can-help-you {
+#we-can-help-you,
+.contact-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 /* Estilo de cada item de navegação no cabeçalho */
-header nav li {
+header nav li,
+.navigation {
     display: inline;
     margin-left: 1.6rem;
     font-size: 1.5rem;
@@ -134,14 +139,14 @@ main #impact-main {
 
 /* Estilo do texto na seção de impacto para destacar o "Dedicated Team */
 .impact-main-text-phase-team {
-    font-weight: 550;
-    color: #27c470;
+    font-weight: 600;
+    color: #182c61;
     text-shadow: 0.1rem 0.02rem 0.05rem rgba(0, 0, 0, 0.3);
 }
 
 /* Estilo do texto na seção de impacto para destacar o "desired Software */
 .impact-main-text-phase-desired {
-    font-weight: 550;
+    font-weight: 600;
     color: #2697b3;
 }
 
@@ -150,6 +155,7 @@ main #impact-main {
     height: 100vh;
 }
 
+/* Estilo dos blocos de serviços */
 .services-container {
     display: flex;
     flex-wrap: wrap;
@@ -157,11 +163,13 @@ main #impact-main {
     padding: 0 12rem 3.2rem;
 }
 
+/* Estilo imagem do nosso time trabalhando */
 .icon-services a img {
     height: 15vh;
     /* margin-bottom: 0.8rem; */
 }
 
+/* Estilo para cada serviço individualmente */
 .services {
     user-select: none;
     width: 32%;
@@ -172,12 +180,14 @@ main #impact-main {
     box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
 }
 
+/* Efeito quando passa o mouse sobre o bloco do serviço */
 .services:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease;
     box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.6);
 }
 
+/* Estilo para todos os títulos das Section (seção) */
 .section-title {
     text-align: center;
     padding: 3.2rem 0;
@@ -186,36 +196,17 @@ main #impact-main {
     font-size: 3.2rem;
 }
 
+/* Estilo para o nome do serviço dentro do bloco */
 .title-services {
     font-size: 1.8rem;
     padding: 1.625rem 0;
 }
 
+/* Estilo para a explicação do serviço dentro do bloco */
 .explaine-services {
     /* margin-top: 1.2rem; */
     font-size: 1.4rem;
     width: auto;
-}
-
-
-/* button contact "we can help you" */
-#main-contact-button {
-    background-color: #2759c4;
-    border: none;
-    transition: transform 0.3s ease-in-out;
-    margin: 1.2rem 0 3.2rem;
-    font-size: 2rem;
-    width: 20vw;
-    height: 4rem;
-    color: #fff;
-}
-
-#main-contact-button:hover {
-    transform: translateY(-5px);
-}
-
-.button-services {
-    margin: auto;
 }
 
 #about-us {
@@ -237,9 +228,167 @@ main #impact-main {
     width: 47vw;
 }
 
+#title-about-us {
+    padding-bottom: 2rem;
+}
+
+/* botão de contato "we can help you" fica na seção about us */
+#about-us-contact-button {
+    background-color: #2759c4;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+    margin: 2rem 0 3.2rem;
+    font-size: 2rem;
+    font-weight: normal;
+    width: 20vw;
+    height: 4rem;
+    color: #fff;
+}
+
+/* Efeito o */
+#about-us-contact-button:hover {
+    transform: translateY(-5px);
+}
+
+/* centraliza o botão "we can help you" no meio da página */
+.button-about-us {
+    margin: auto;
+}
+
+/* Estilo da seção de contato */
+#contact {
+    background-color: #f7f7f7;
+    height: 100vh;
+    margin: auto;
+}
+
+.contact-container {
+    margin: 0 10vw 0 4vw;
+}
+
+/* Estilo para os blocos de preenchimento do formulário */
+.form-text input,
+.form-button,
+.form-text textarea {
+    display: block;
+    width: 32rem;
+    margin-bottom: 0.8rem;
+    padding: 0.8rem;
+}
+
+/* Estilo para o bloco de message do formulário*/
+form textarea {
+    resize: none;
+    height: 18rem;
+}
+
+/* estilo para os títulos dos blocos de preenchimento do formulário */
+.form-text label {
+    display: block;
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Estilo do button "submit" do formulário */
+.form-button {
+    background-color: #2759c4;
+    height: 3.6rem;
+    border-radius: 2rem;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+/* Efeito do button "submit" quando passa o mouse */
+form button:hover {
+    background-color: #376bdb;
+}
+
+/* Estilo para quando o usuário estiver preenchendo uma box*/
+input:focus,
+textarea:focus {
+    outline-color: #182c61;
+}
+
+
+/* estilo do follow us com as medias sociais */
+.follow-us {
+    display: block;
+    text-align: center;
+}
+
+.follow-us h3,
+#talk-to-us {
+    color: #182c61;
+    font-size: 2rem;
+    padding-bottom: 1.6rem;
+}
+
+/* Estilo para os botões das medias sociais */
+.social-media img {
+    height: 2.4rem;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media li {
+    display: inline;
+    margin: 0 1.5rem;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #182c61;
+    font-size: 1.5rem;
+}
+
+.contact-adress{
+    display: inline;
+}
+
+.contact-adress a:first-of-type {
+    margin-bottom: 10px;
+}
+
+.contacts a:hover {
+    color: #376bdb;
+}
+
 footer {
     background-color: #182c61;
     color: #ecf0f1;
-    padding: 16px 0;
+    padding: 3.6rem 0 1.8rem;
     text-align: center;
+}
+
+/* Estilo do menu de navegação*/
+#title-nav-contact {
+    font-weight: bold;
+    margin-right: 0.8rem;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3.6rem;
+    font-size: 1.6rem;
+}
+
+.navigation a {
+    display: block;
+    font-weight: 500;
+    padding: 0 0.8rem;
+}
+
+.navigation a:hover {
+    color: #b6b8c4;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.19);
+    padding-top: 1.8rem;
 }
